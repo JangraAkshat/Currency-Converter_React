@@ -66,7 +66,8 @@ function App() {
                             // onCurrencyChange={(currency) => setConvertedAmount(currency)}
                             onCurrencyChange={(currency) => setTo(currency)}
                             selectCurrency={to}
-                            amountDisable  />
+                            amountDisable
+                            onAmountChange={(amount)=> setAmount(amount)}  />
                     </div>
                     <button type="submit" className="w-full bg-blue-600 text-white px-4 py-3 rounded-lg">
                         Convert {from.toUpperCase()} to {to.toUpperCase()}
